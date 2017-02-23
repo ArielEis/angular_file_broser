@@ -1,0 +1,1 @@
+appModule.bootstrap(document.getElementById('html'), 'web-file-browser');
