@@ -13,4 +13,4 @@ SystemJS.config({
         }
     }
 });
-SystemJS.import("app/js/appModule");
+SystemJS.import("app/js/boot");

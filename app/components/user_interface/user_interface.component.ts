@@ -1,4 +1,10 @@
+import { appModule } from '../../js/appModule';
 
-class UserInterface{
+export class UserInterface{
 
 }
+
+appModule.component('userInterface', {
+    controller: UserInterface,
+    templateUrl: "app/components/user_interface/user_interface.component.html",
+});
