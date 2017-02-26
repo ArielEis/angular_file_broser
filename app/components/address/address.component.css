@@ -1,0 +1,10 @@
+.address-input{
+    position: relative;
+    top: -3px;
+    left: 20px;
+    width: 800px;
+    height: 30px;
+    outline: 2px solid black;
+    font-size: 25px;
+    text-indent: 10px;
+}
