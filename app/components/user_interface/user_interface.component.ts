@@ -2,6 +2,12 @@ import { appModule } from '../../js/appModule';
 
 export class UserInterface{
 
+    currentId: number;
+
+    constructor(){
+        this.currentId = 0;
+    }
+
 }
 
 appModule.component('userInterface', {

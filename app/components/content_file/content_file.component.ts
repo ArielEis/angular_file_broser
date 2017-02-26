@@ -1,7 +1,11 @@
 import { appModule } from '../../js/appModule';
 
 export class ContentFile{
+    currentId :number;
 
+    constructor(){
+
+    }
 }
 
 appModule.component('contentFile', {

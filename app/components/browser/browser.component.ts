@@ -7,4 +7,7 @@ export class Browser{
 appModule.component('browser', {
     controller: Browser,
     templateUrl: "app/components/browser/browser.component.html",
+    bindings: {
+        currentId: "<",
+    }
 });

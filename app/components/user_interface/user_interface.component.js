@@ -2,6 +2,7 @@
 var appModule_1 = require('../../js/appModule');
 var UserInterface = (function () {
     function UserInterface() {
+        this.currentId = 0;
     }
     return UserInterface;
 }());
