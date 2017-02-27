@@ -2,10 +2,10 @@
 var appModule_1 = require('../../js/appModule');
 var Content = (function () {
     function Content() {
-        this.currentId = 200;
+        this.id = 200;
     }
     Content.prototype.debug = function () {
-        console.log(this.currentId);
+        console.log(this.id);
     };
     return Content;
 }());
@@ -14,7 +14,7 @@ appModule_1.appModule.component('content', {
     controller: Content,
     templateUrl: "app/components/content/content.component.html",
     bindings: {
-        currentId: "<"
+        id: "<"
     }
 });
 //# sourceMappingURL=content.component.js.map
