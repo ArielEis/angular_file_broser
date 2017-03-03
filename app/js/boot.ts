@@ -9,9 +9,17 @@ import {BrowserDirectory} from "../components/browser_directory/browser_director
 import {ContentFile} from "../components/content_file/content_file.component";
 import {History} from "../components/history/history.component";
 import {Address} from "../components/address/address.component";
+import {FileSystem} from "../services/fileSystem";
+import {SystemManage} from "../services/systemManage";
 
 
 appModule;
+
+//services
+FileSystem;
+SystemManage;
+
+//components
 UserInterface;
 TopBar;
 Browser;

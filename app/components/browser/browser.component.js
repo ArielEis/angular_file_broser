@@ -10,7 +10,8 @@ appModule_1.appModule.component('browser', {
     controller: Browser,
     templateUrl: "app/components/browser/browser.component.html",
     bindings: {
-        currentId: "<",
+        root: "<",
+        setshow: "<",
     }
 });
 //# sourceMappingURL=browser.component.js.map

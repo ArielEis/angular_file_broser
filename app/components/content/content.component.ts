@@ -15,7 +15,7 @@ export class Content{
 appModule.component('content', {
     controller: Content,
     templateUrl: "app/components/content/content.component.html",
-    bindings: {
-        id: "<"
+    bindings:{
+        show: "<",
     }
 });

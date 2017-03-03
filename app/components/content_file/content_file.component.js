@@ -10,7 +10,7 @@ appModule_1.appModule.component('contentFile', {
     controller: ContentFile,
     templateUrl: "app/components/content_file/content_file.component.html",
     bindings: {
-        id: "<",
+        show: "<",
     }
 });
 //# sourceMappingURL=content_file.component.js.map

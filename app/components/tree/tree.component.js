@@ -9,5 +9,9 @@ exports.Tree = Tree;
 appModule_1.appModule.component('tree', {
     controller: Tree,
     templateUrl: "app/components/tree/tree.component.html",
+    bindings: {
+        root: "<",
+        setshow: "<",
+    }
 });
 //# sourceMappingURL=tree.component.js.map

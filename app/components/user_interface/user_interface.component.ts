@@ -1,11 +1,28 @@
 import { appModule } from '../../js/appModule';
+import {FileSystem} from "../../services/fileSystem";
+import {SystemManage} from "../../services/systemManage";
 
 export class UserInterface{
 
-    currentId: number;
 
-    constructor(){
-        this.currentId = 0;
+    constructor(private fileSystem: FileSystem, private systemManage: SystemManage){
+
+    }
+
+    get root(){
+        return this.fileSystem.root;
+    }
+
+    get id(){
+        return this.systemManage.currentId;
+    }
+
+    get setCurrentId(){
+        return this.systemManage.setCurrentId;
+    }
+
+    get setTargetId(){
+        return this.systemManage.setTargetId;
     }
 
 }

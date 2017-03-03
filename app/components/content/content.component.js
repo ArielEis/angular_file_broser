@@ -14,7 +14,7 @@ appModule_1.appModule.component('content', {
     controller: Content,
     templateUrl: "app/components/content/content.component.html",
     bindings: {
-        id: "<"
+        show: "<",
     }
 });
 //# sourceMappingURL=content.component.js.map
