@@ -2,11 +2,12 @@
     <li><ul>
     <img class="browser-directory-img" src="{{$ctrl.syncDirectoryImage()}}"
          ng-click="$ctrl.handleDirectoryImageClick()">
-        <a href="#" ng-click="$ctrl.setshow($ctrl.directory.id)">{{$ctrl.directory.name}}</a>
+        <a href="#" ng-mousedown="$ctrl.handleClick($event, $ctrl.directory.id)"
+                    oncontextmenu="return false">{{$ctrl.directory.name}}</a>
             <li ng-if="$ctrl._isDirectoryOpen">
                 <browser-directory ng-repeat="item in $ctrl.directory.items"
                                    directory=item ng-if="item.getType() !== directory"
-                                    setshow="$ctrl.setshow">
+                                    setshow="$ctrl.setshow" sys="$ctrl.sys">
                 </browser-directory>
             </li>
     </ul></li>

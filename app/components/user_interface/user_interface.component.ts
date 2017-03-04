@@ -14,7 +14,7 @@ export class UserInterface{
     }
 
     get id(){
-        return this.systemManage.currentId;
+        return this.systemManage.getCurrentId;
     }
 
     get setCurrentId(){

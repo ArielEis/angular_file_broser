@@ -2,7 +2,6 @@
 var appModule_1 = require('../../js/appModule');
 var BrowserDirectory = (function () {
     function BrowserDirectory() {
-        this._isDirectoryOpen = false;
     }
     BrowserDirectory.prototype.syncDirectoryImage = function () {
         if (this._isDirectoryOpen) {
@@ -13,6 +12,16 @@ var BrowserDirectory = (function () {
     BrowserDirectory.prototype.handleDirectoryImageClick = function () {
         this._isDirectoryOpen = !this._isDirectoryOpen;
     };
+    BrowserDirectory.prototype.handleClick = function (event, id) {
+        switch (event.which) {
+            case 1:
+                this.sys.setCurrentId(id);
+                break;
+            case 3:
+                this.sys.toggleContextMenu(event.x + 5, event.y + 5);
+                break;
+        }
+    };
     return BrowserDirectory;
 }());
 exports.BrowserDirectory = BrowserDirectory;
@@ -20,8 +29,9 @@ appModule_1.appModule.component('browserDirectory', {
     controller: BrowserDirectory,
     templateUrl: "app/components/browser_directory/browser_directory.component.html",
     bindings: {
-        directory: "<",
-        setshow: "=",
+        directory: "=",
+        fs: "=",
+        sys: "=",
     }
 });
 //# sourceMappingURL=browser_directory.component.js.map

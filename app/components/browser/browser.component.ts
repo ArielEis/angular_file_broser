@@ -10,5 +10,6 @@ appModule.component('browser', {
     bindings: {
         root: "<",
         setshow: "<",
+        sys: "<",
     }
 });

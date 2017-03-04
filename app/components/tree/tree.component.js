@@ -12,6 +12,7 @@ appModule_1.appModule.component('tree', {
     bindings: {
         root: "<",
         setshow: "<",
+        sys: "<",
     }
 });
 //# sourceMappingURL=tree.component.js.map

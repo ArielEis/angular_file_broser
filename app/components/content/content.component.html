@@ -1,3 +1,3 @@
 <div class="content-body" ng-click="$ctrl.debug()">
-    <content-file show="$ctrl.show"></content-file>
+    <content-file ng-repeat="item in $ctrl.fs.root.items" dir=item></content-file>
 </div>

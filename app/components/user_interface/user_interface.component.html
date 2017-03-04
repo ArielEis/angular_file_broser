@@ -1,7 +1,12 @@
+<div class="context-menu" ng-style="{'top': $ctrl.systemManage.getY(), 'left':  $ctrl.systemManage.getX()}">
+    <context-menu ng-if="$ctrl.systemManage.contextMenu" sys="$ctrl.systemManage"></context-menu>
+</div>
 <div class="ui-top">
     <top-bar></top-bar>
 </div>
 <div class="ui-container">
-    <browser root="$ctrl.root" setshow="$ctrl.setCurrentId"></browser>
-    <content show="$ctrl.id"></content>
+    <browser root="$ctrl.root" setshow="$ctrl.setCurrentId" oncontextmenu="return false"
+             sys="$ctrl.systemManage" ng-click="$ctrl.systemManage.closeContextMenu()"></browser>
+    <content fs="$ctrl.fileSystem" sys="$ctrl.systemManage" oncontextmenu="return false"
+             ng-click="$ctrl.systemManage.closeContextMenu()"></content>
 </div>

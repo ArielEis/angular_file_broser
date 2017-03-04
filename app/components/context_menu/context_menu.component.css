@@ -1,0 +1,17 @@
+.context-menu-row{
+     background-color: snow;
+     text-align: center;
+     border-bottom: 1px solid black;
+     border-left: 1px solid black;
+     border-right: 1px solid black;
+     font-size: 20px;
+ }
+
+.context-menu-row:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.context-menu:first-child{
+    border-top: 1px solid black;
+}

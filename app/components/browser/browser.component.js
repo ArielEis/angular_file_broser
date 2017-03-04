@@ -12,6 +12,7 @@ appModule_1.appModule.component('browser', {
     bindings: {
         root: "<",
         setshow: "<",
+        sys: "<",
     }
 });
 //# sourceMappingURL=browser.component.js.map

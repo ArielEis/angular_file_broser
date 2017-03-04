@@ -12,6 +12,7 @@ var history_component_1 = require("../components/history/history.component");
 var address_component_1 = require("../components/address/address.component");
 var fileSystem_1 = require("../services/fileSystem");
 var systemManage_1 = require("../services/systemManage");
+var context_menu_component_1 = require("../components/context_menu/context_menu.component");
 appModule_1.appModule;
 //services
 fileSystem_1.FileSystem;
@@ -21,6 +22,7 @@ user_interface_component_1.UserInterface;
 top_bar_component_1.TopBar;
 browser_component_1.Browser;
 content_component_1.Content;
+context_menu_component_1.ContextMenu;
 tree_component_1.Tree;
 browser_directory_component_1.BrowserDirectory;
 content_file_component_1.ContentFile;

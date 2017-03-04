@@ -10,5 +10,6 @@ appModule.component('tree', {
     bindings: {
         root: "<",
         setshow: "<",
+        sys: "<",
     }
 });

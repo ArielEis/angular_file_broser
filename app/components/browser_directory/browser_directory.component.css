@@ -6,3 +6,8 @@
 ul li{
     list-style: none;
 }
+
+ul a, ul a:hover, ul a:visited, ul a:active{
+    color: black;
+    text-decoration: none;
+}

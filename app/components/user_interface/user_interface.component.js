@@ -14,7 +14,7 @@ var UserInterface = (function () {
     });
     Object.defineProperty(UserInterface.prototype, "id", {
         get: function () {
-            return this.systemManage.currentId;
+            return this.systemManage.getCurrentId;
         },
         enumerable: true,
         configurable: true
