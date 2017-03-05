@@ -2,15 +2,18 @@
 var appModule_1 = require('../../js/appModule');
 var BrowserDirectory = (function () {
     function BrowserDirectory() {
+        this._isDirectoryOpen = false;
+        this._imageSrc = 'browser-directory-close';
     }
     BrowserDirectory.prototype.syncDirectoryImage = function () {
         if (this._isDirectoryOpen) {
-            return 'pic/open_directory.png';
+            this._imageSrc = 'browser-directory-open';
         }
-        return 'pic/close_directory.png';
+        this._imageSrc = 'browser-directory-close';
     };
     BrowserDirectory.prototype.handleDirectoryImageClick = function () {
         this._isDirectoryOpen = !this._isDirectoryOpen;
+        this.syncDirectoryImage();
     };
     BrowserDirectory.prototype.handleClick = function (event, id) {
         switch (event.which) {

@@ -3,22 +3,25 @@ import { appModule } from '../../js/appModule';
 export class BrowserDirectory{
 
     _isDirectoryOpen: boolean;
+    _imageSrc: string;
     setshow: any;
     sys: any;
 
     constructor(){
-
+        this._isDirectoryOpen = false;
+        this._imageSrc = 'browser-directory-close';
     }
 
     syncDirectoryImage(){
         if (this._isDirectoryOpen) {
-            return 'pic/open_directory.png';
+            this._imageSrc = 'browser-directory-open';
         }
-        return 'pic/close_directory.png';
+        this._imageSrc = 'browser-directory-close';
     }
 
     handleDirectoryImageClick(){
         this._isDirectoryOpen = !this._isDirectoryOpen;
+        this.syncDirectoryImage();
     }
 
     handleClick(event, id): void{

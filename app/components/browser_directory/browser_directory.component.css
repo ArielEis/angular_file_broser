@@ -3,6 +3,14 @@
     height: 20px;
 }
 
+.browser-directory-close{
+    content: url('../../../pic/close_directory.png');
+}
+
+.browser-directory-open{
+    content: url('../../../pic/open_directory.png');
+}
+
 ul li{
     list-style: none;
 }

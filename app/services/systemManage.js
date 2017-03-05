@@ -18,7 +18,6 @@ var SystemManage = (function () {
             this.currentId = -1;
             return;
         }
-        console.log(id);
         this.currentId = id;
         this.showContent = true;
     };
