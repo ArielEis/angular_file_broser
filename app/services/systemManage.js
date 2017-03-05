@@ -7,12 +7,20 @@ var SystemManage = (function () {
         this.contextMenu = false;
         this.contextMenuXposition = 0;
         this.contextMenuYposition = 0;
+        this.showContent = false;
     }
     SystemManage.prototype.resetTargetId = function () {
         this.targetId = -1;
     };
     SystemManage.prototype.setCurrentId = function (id) {
+        this.showContent = false;
+        if (this.currentId === id) {
+            this.currentId = -1;
+            return;
+        }
+        console.log(id);
         this.currentId = id;
+        this.showContent = true;
     };
     SystemManage.prototype.setTargetId = function (id) {
         this.targetId = id;

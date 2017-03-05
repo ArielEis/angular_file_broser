@@ -1,3 +1,7 @@
 <div class="content-file">
-    {{$directory}}
+
+
+    <img class="content-file-{{$ctrl.dir.getType()}}"
+         ng-mousedown="$ctrl.handleClick($event, $ctrl.dir.id)">
+    <span class="content-file-title">{{$ctrl.dir.name}}</span>
 </div>

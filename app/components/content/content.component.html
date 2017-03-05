@@ -1,3 +1,5 @@
-<div class="content-body" ng-click="$ctrl.debug()">
-    <content-file ng-repeat="item in $ctrl.fs.root.items" dir=item></content-file>
+<div class="content-body" ng-click="$ctrl.debug()" ng-if="$ctrl.sys.showContent"
+        ng-model="$ctrl.sys.showContent">
+    <content-file ng-repeat="item in $ctrl.fs.getItem($ctrl.sys.currentId).getChildren()"
+                  dir=item sys="$ctrl.sys"></content-file>
 </div>

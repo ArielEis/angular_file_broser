@@ -11,4 +11,8 @@ export class TextFile extends File{
     setContent(newContent: string) :void {
         this.content = newContent;
     }
+
+    getType(): string{
+        return 'text';
+    }
 }

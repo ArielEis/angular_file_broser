@@ -14,6 +14,9 @@ var TextFile = (function (_super) {
     TextFile.prototype.setContent = function (newContent) {
         this.content = newContent;
     };
+    TextFile.prototype.getType = function () {
+        return 'text';
+    };
     return TextFile;
 }(File_1.File));
 exports.TextFile = TextFile;

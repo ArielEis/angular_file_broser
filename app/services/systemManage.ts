@@ -8,6 +8,7 @@ export class SystemManage{
     contextMenu: boolean;
     contextMenuXposition: number;
     contextMenuYposition: number;
+    showContent: boolean;
 
     constructor(){
         this.currentId = -1;
@@ -15,6 +16,7 @@ export class SystemManage{
         this.contextMenu = false;
         this.contextMenuXposition = 0;
         this.contextMenuYposition = 0;
+        this.showContent = false;
     }
 
     resetTargetId(): void{
@@ -22,7 +24,14 @@ export class SystemManage{
     }
 
     setCurrentId(id: number): void{
+        this.showContent = false;
+        if (this.currentId === id){
+            this.currentId = -1;
+            return;
+        }
+        console.log(id);
         this.currentId = id;
+        this.showContent = true;
     }
 
     setTargetId(id: number): void{

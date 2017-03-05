@@ -9,7 +9,7 @@ export class Folder extends File{
     }
 
     getType() :string {
-        return 'Directory';
+        return 'directory';
     }
 
     addChild(item: File) :void {
@@ -45,6 +45,10 @@ export class Folder extends File{
             }
         }
 
+    }
+
+    getChildren(): File[]{
+        return this.items;
     }
 
 }

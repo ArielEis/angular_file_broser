@@ -2,3 +2,21 @@
     margin-top: 20px;
     margin-left: 20px;
 }
+.content-file-directory{
+    content: url("../../../pic/close_directory.png");
+    width: 40px;
+    height: 30px;
+}
+
+.content-file-text{
+    content: url("../../../pic/txt.png");
+    width: 28px;
+    height: 30px;
+}
+
+.content-file-title{
+    position: relative;
+    top: 20px;
+    left: -42px;
+    font-size: 18px;
+}

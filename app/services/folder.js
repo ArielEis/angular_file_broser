@@ -12,7 +12,7 @@ var Folder = (function (_super) {
         this.items = [];
     }
     Folder.prototype.getType = function () {
-        return 'Directory';
+        return 'directory';
     };
     Folder.prototype.addChild = function (item) {
         if (!(item instanceof File_1.File)) {
@@ -45,6 +45,9 @@ var Folder = (function (_super) {
                 break;
             }
         }
+    };
+    Folder.prototype.getChildren = function () {
+        return this.items;
     };
     return Folder;
 }(File_1.File));
